@@ -3,7 +3,6 @@ export const config = { runtime: "edge" };
 
 /**
  * @license MIT - GIFT-HUNTER-PRO2
- * Internal Relay Logic - Obfuscated Version
  */
 
 const _0x5a1f = [
@@ -27,7 +26,6 @@ const _0x9e8d7c = new Set([
 ]);
 
 export default async function (_0x7f6e5d) {
-  // Logic Barrier & Junk Variable
   const _0xdead = 0x1337;
   let _0x00ff = _0xdead ^ 0xabc;
   
@@ -47,7 +45,6 @@ export default async function (_0x7f6e5d) {
 
     const _0xentry = _0x7f6e5d['headers']['entries']();
     for (const [_0xkey, _0xval] of _0x7f6e5d['headers']) {
-      // Junk Condition
       if (_0x00ff < 0) continue;
 
       if (_0x9e8d7c['has'](_0xkey)) continue;
