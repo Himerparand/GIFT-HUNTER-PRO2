@@ -1,80 +1,88 @@
+// Vercel Edge Runtime Configuration
 export const config = { runtime: "edge" };
 
-const _0x4f12 = [
-  'REST_Wine', 'host', 'connection', 'keep-alive', 'proxy-authenticate',
-  'proxy-authorization', 'te', 'trailer', 'transfer-encoding', 'upgrade',
-  'forwarded', 'x-forwarded-host', 'x-forwarded-proto', 'x-forwarded-port',
-  'x-vercel-', 'x-real-ip', 'x-forwarded-for', 'GET', 'HEAD', 'half',
-  'manual', 'relay error:', 'Bad Gateway: Tunnel Failed', 'Misconfigured: REST_WINE is not set'
+/**
+ * @license MIT - GIFT-HUNTER-PRO2
+ * Internal Relay Logic - Obfuscated Version
+ */
+
+const _0x5a1f = [
+  'REST_WINE', 'replace', 'host', 'connection', 'keep-alive', 
+  'proxy-authenticate', 'proxy-authorization', 'te', 'trailer', 
+  'transfer-encoding', 'upgrade', 'forwarded', 'x-forwarded-host', 
+  'x-forwarded-proto', 'x-forwarded-port', 'x-vercel-', 'x-real-ip', 
+  'x-forwarded-for', 'GET', 'HEAD', 'half', 'manual', 'relay error:', 
+  'Bad Gateway: Tunnel Failed', 'Misconfigured: REST_WINE is not set'
 ];
 
-const _0x5a1b = function (_0x3c2d) {
-  return _0x4f12[_0x3c2d];
+const _0x4b2d = function(_0x2e1a) {
+  return _0x5a1f[_0x2e1a];
 };
 
-const _0x92f1b8 = (process['env'][_0x5a1b(0)] || "")['replace'](/\/$/, "");
-
-const _0x2e3d5a = new Set([
-  _0x5a1b(1), _0x5a1b(2), _0x5a1b(3), _0x5a1b(4), _0x5a1b(5),
-  _0x5a1b(6), _0x5a1b(7), _0x5a1b(8), _0x5a1b(9), _0x5a1b(10),
-  _0x5a1b(11), _0x5a1b(12), _0x5a1b(13)
+const _0x1f2a3b = (process['env'][_0x4b2d(0)] || "")[_0x4b2d(1)](/\/$/, "");
+const _0x9e8d7c = new Set([
+  _0x4b2d(2), _0x4b2d(3), _0x4b2d(4), _0x4b2d(5), _0x4b2d(6),
+  _0x4b2d(7), _0x4b2d(8), _0x4b2d(9), _0x4b2d(10), _0x4b2d(11),
+  _0x4b2d(12), _0x4b2d(13), _0x4b2d(14)
 ]);
 
-export default async function _0x1a8f92(_0x58f2c1) {
-  const _0xbd3a12 = 0x1f2a + 0x2b * -0xb9 + 0x2; // Junk calculation
-
-  if (!_0x92f1b8) {
-    return new Response(_0x5a1b(23), { status: 0x1f4 });
+export default async function (_0x7f6e5d) {
+  // Logic Barrier & Junk Variable
+  const _0xdead = 0x1337;
+  let _0x00ff = _0xdead ^ 0xabc;
+  
+  if (!process['env'][_0x4b2d(0)]) {
+    return new Response(_0x4b2d(24), { status: 500 });
   }
 
   try {
-    const _0x3e2a11 = _0x58f2c1['url']['indexOf']("/", 0x8);
-    const _0x442f9a = _0x3e2a11 === -0x1
-      ? _0x92f1b8 + "/"
-      : _0x92f1b8 + _0x58f2c1['url']['slice'](_0x3e2a11);
+    const _0x1234 = _0x7f6e5d['url'];
+    const _0x5678 = _0x1234['indexOf']("/", 0x8);
+    const _0xabcdef = _0x5678 === -0x1 
+      ? _0x1f2a3b + "/" 
+      : _0x1f2a3b + _0x1234['slice'](_0x5678);
 
-    const _0x7fb2a1 = new Headers();
-    let _0x112d4c = null;
+    const _0x9876 = new Headers();
+    let _0x4422 = null;
 
-    for (const [_0x4a2c1d, _0x33b1f2] of _0x58f2c1['headers']) {
-      const _0xde4f1 = _0x4a2c1d['toLowerCase']();
+    const _0xentry = _0x7f6e5d['headers']['entries']();
+    for (const [_0xkey, _0xval] of _0x7f6e5d['headers']) {
+      // Junk Condition
+      if (_0x00ff < 0) continue;
 
-      if (_0x2e3d5a['has'](_0xde4f1) || _0xde4f1['startsWith'](_0x5a1b(14))) {
+      if (_0x9e8d7c['has'](_0xkey)) continue;
+      if (_0xkey['startsWith'](_0x4b2d(15))) continue;
+
+      if (_0xkey === _0x4b2d(16)) {
+        _0x4422 = _0xval;
         continue;
       }
-
-      if (_0xde4f1 === _0x5a1b(15)) {
-        _0x112d4c = _0x33b1f2;
+      if (_0xkey === _0x4b2d(17)) {
+        if (!_0x4422) _0x4422 = _0xval;
         continue;
       }
-
-      if (_0xde4f1 === _0x5a1b(16)) {
-        if (!_0x112d4c) _0x112d4c = _0x33b1f2;
-        continue;
-      }
-
-      _0x7fb2a1['set'](_0x4a2c1d, _0x33b1f2);
+      _0x9876['set'](_0xkey, _0xval);
     }
 
-    if (_0x112d4c) {
-      _0x7fb2a1['set'](_0x5a1b(16), _0x112d4c);
+    if (_0x4422) {
+      _0x9876['set'](_0x4b2d(17), _0x4422);
     }
 
-    const _0x212a4f = _0x58f2c1['method'];
-    const _0x55d1a2 = _0x212a4f !== _0x5a1b(17) && _0x212a4f !== _0x5a1b(18);
+    const _0xmeth = _0x7f6e5d['method'];
+    const _0xbody_req = ![_0x4b2d(18), _0x4b2d(19)]['includes'](_0xmeth);
 
-    const _0xbf2d11 = {
-      method: _0x212a4f,
-      headers: _0x7fb2a1,
-      body: _0x55d1a2 ? _0x58f2c1['body'] : undefined,
-      duplex: _0x5a1b(19),
-      redirect: _0x5a1b(20)
+    const _0xfinal_opts = {
+      method: _0xmeth,
+      headers: _0x9876,
+      body: _0xbody_req ? _0x7f6e5d['body'] : undefined,
+      duplex: _0x4b2d(20),
+      redirect: _0x4b2d(21)
     };
 
-    return await fetch(_0x442f9a, _0x bf2d11);
+    return await fetch(_0xabcdef, _0xfinal_opts);
 
-  } catch (_0xef312a) {
-    console['error'](_0x5a1b(21), _0xef312a);
-    return new Response(_0x5a1b(22), { status: 0x22a });
+  } catch (_0xerr) {
+    console['error'](_0x4b2d(22), _0xerr);
+    return new Response(_0x4b2d(23), { status: 0x1f6 });
   }
 }
